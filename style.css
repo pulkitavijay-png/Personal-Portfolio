@@ -46,190 +46,326 @@ img{max-width:100%;display:block}
 
 
 /* =========================================================
-   ADDITIONS ONLY — original portfolio design remains intact
-   ========================================================= */
+   PORTFOLIO VISUAL ADDITIONS
+   Photo + mandala balance
+========================================================= */
 
-/* Large circular photo frame for the first/hero page */
+
+/* =========================================================
+   1. HERO PHOTO
+   Simple, large circular frame
+========================================================= */
+
 .hero-photo-frame {
   position: absolute;
   z-index: 3;
   right: 7%;
   top: 50%;
-  width: clamp(270px, 30vw, 390px);
-  height: clamp(270px, 30vw, 390px);
+
+  width: clamp(290px, 31vw, 400px);
+  height: clamp(290px, 31vw, 400px);
+
   transform: translateY(-50%);
+
   display: grid;
   place-items: center;
+
   pointer-events: none;
 }
 
+
+/* Rotating mandala stays BEHIND the photo */
+
 .hero-mandala-ring {
   position: absolute;
-  inset: -28px;
+  z-index: 1;
+
+  inset: -20px;
+
   border-radius: 50%;
-  opacity: .52;
+
+  opacity: .72;
+
   background:
-    radial-gradient(circle, transparent 0 58%, rgba(255,45,117,.20) 58.3% 58.8%, transparent 59.1%),
-    radial-gradient(circle, transparent 0 69%, rgba(143,84,255,.18) 69.3% 69.8%, transparent 70.1%),
+    radial-gradient(
+      circle,
+      transparent 0 56%,
+      rgba(255,45,117,.30) 56.5% 57.2%,
+      transparent 58%
+    ),
+
+    radial-gradient(
+      circle,
+      transparent 0 70%,
+      rgba(143,84,255,.28) 70.5% 71.2%,
+      transparent 72%
+    ),
+
     repeating-conic-gradient(
       from 2deg,
-      rgba(255,45,117,.28) 0deg 1deg,
+      rgba(255,45,117,.36) 0deg 1deg,
       transparent 1deg 15deg,
-      rgba(143,84,255,.22) 15deg 16deg,
+      rgba(143,84,255,.30) 15deg 16deg,
       transparent 16deg 30deg
     );
-  -webkit-mask-image: radial-gradient(circle, #000 0 68%, transparent 72%);
-  mask-image: radial-gradient(circle, #000 0 68%, transparent 72%);
+
+  -webkit-mask-image:
+    radial-gradient(
+      circle,
+      #000 0 67%,
+      transparent 72%
+    );
+
+  mask-image:
+    radial-gradient(
+      circle,
+      #000 0 67%,
+      transparent 72%
+    );
+
+  animation: slowSpin 55s linear infinite;
 }
+
+
+/* Extra engineering-style rings */
 
 .hero-mandala-ring::before,
 .hero-mandala-ring::after {
   content: "";
+
   position: absolute;
-  inset: 11%;
-  border: 1px solid rgba(255,45,117,.22);
+
   border-radius: 50%;
+
+  border: 1px solid rgba(255,45,117,.28);
+}
+
+.hero-mandala-ring::before {
+  inset: 10%;
   transform: rotate(30deg);
 }
 
 .hero-mandala-ring::after {
   inset: 18%;
-  border-color: rgba(143,84,255,.22);
+  border-color: rgba(143,84,255,.28);
   transform: rotate(-30deg);
 }
 
+
+/* =========================================================
+   2. THE ACTUAL PHOTO CIRCLE
+   Clean — no complicated frame
+========================================================= */
+
 .hero-photo {
-  width: 76%;
-  height: 76%;
+  position: relative;
+  z-index: 3;
+
+  width: 82%;
+  height: 82%;
+
   border-radius: 50%;
+
   overflow: hidden;
+
   display: grid;
   place-items: center;
-  padding: 7px;
-  background: linear-gradient(135deg, rgba(255,45,117,.9), rgba(143,84,255,.72));
+
+  padding: 0;
+
+  /* simple professional circular border */
+  border: 3px solid rgba(255,45,117,.90);
+
+  background: rgba(8,8,16,.96);
+
   box-shadow:
-    0 0 0 1px rgba(255,255,255,.08),
-    0 20px 70px rgba(0,0,0,.38);
+    0 0 0 1px rgba(143,84,255,.55),
+    0 20px 65px rgba(0,0,0,.42);
 }
 
-.hero-photo img,
-.hero-photo-placeholder {
+
+/* Actual image */
+
+.hero-photo img {
   width: 100%;
   height: 100%;
+
   border-radius: 50%;
+
   object-fit: cover;
+
+  display: block;
 }
 
+
+/* Placeholder before you add your photo */
+
 .hero-photo-placeholder {
+  position: absolute;
+  inset: 0;
+
   display: grid;
   place-items: center;
+
+  border-radius: 50%;
+
   background: rgba(10,9,18,.96);
+
   color: rgba(238,234,253,.48);
-  font: 10px ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  font: 10px ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        monospace;
+
   letter-spacing: .12em;
+
   text-transform: uppercase;
 }
 
-.hero-photo img:not([style*="display: none"]) + .hero-photo-placeholder {
+
+/* Hide placeholder when actual image exists */
+
+.hero-photo img:not([style*="display: none"])
+  + .hero-photo-placeholder {
   display: none;
 }
 
-/* Tiny creative accents — deliberately sparse */
-.art-sparkle {
-  position: absolute;
-  z-index: 2;
-  color: rgba(255,45,117,.62);
-  font-size: 18px;
-  pointer-events: none;
-}
-.sparkle-one { right: 40%; top: 24%; }
-.sparkle-two { right: 4%; bottom: 18%; color: rgba(143,84,255,.62); }
 
-.art-geometry {
-  position: absolute;
-  z-index: 1;
-  right: 38%;
-  bottom: 15%;
-  width: 42px;
-  height: 42px;
-  border: 1px solid rgba(143,84,255,.22);
-  transform: rotate(45deg);
-  pointer-events: none;
+/* =========================================================
+   3. MAKE THE OTHER MAN DALAS MORE VISIBLE
+   Still subtle — just no longer disappearing
+========================================================= */
+
+
+/* Main hero mandala */
+
+.mandala-hero {
+  opacity: .58 !important;
 }
 
-/* Small artistic markers between lower sections */
-.section-art {
-  height: 1px;
-  position: relative;
-  pointer-events: none;
+
+/* About section */
+
+.mandala-about {
+  opacity: .22 !important;
 }
 
-.section-art > * {
-  position: absolute;
+
+/* Projects */
+
+.projects-mandala {
+  opacity: .10 !important;
 }
+
+
+/* Learning */
+
+.learning-mandala {
+  opacity: .09 !important;
+}
+
+
+/* Contact */
+
+.mandala-contact {
+  opacity: .11 !important;
+}
+
+
+/* Work-in-progress card */
+
+.wip-mandala {
+  opacity: .13 !important;
+}
+
+
+/* Small mandalas between sections */
 
 .section-art-projects .mini-mandala,
 .section-art-contact .mini-mandala {
-  right: 9%;
-  top: -28px;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  opacity: .23;
-  background:
-    radial-gradient(circle, transparent 0 35%, rgba(255,45,117,.7) 36% 37%, transparent 38%),
-    repeating-conic-gradient(rgba(143,84,255,.5) 0 3deg, transparent 3deg 18deg);
-  -webkit-mask-image: radial-gradient(circle, #000 0 55%, transparent 56%);
-  mask-image: radial-gradient(circle, #000 0 55%, transparent 56%);
+  opacity: .38;
 }
 
-.mini-star {
-  right: 15%;
-  top: -18px;
-  color: rgba(255,45,117,.42);
-  font-size: 12px;
-}
+
+/* Small learning ring */
 
 .section-art-learning .mini-ring {
-  left: 10%;
-  top: -24px;
-  width: 44px;
-  height: 44px;
-  border: 1px solid rgba(143,84,255,.22);
-  border-radius: 50%;
+  border-color: rgba(143,84,255,.38);
 }
 
 .section-art-learning .mini-ring::before {
-  content: "";
-  position: absolute;
-  inset: 8px;
-  border: 1px dashed rgba(255,45,117,.24);
-  border-radius: 50%;
+  border-color: rgba(255,45,117,.38);
 }
 
-.section-art-learning .mini-star {
-  left: 15%;
-  top: -15px;
+
+/* =========================================================
+   4. KEEP THE SMALL CREATIVE DETAILS
+========================================================= */
+
+.art-sparkle {
+  opacity: .85;
 }
+
+.sparkle-one {
+  right: 40%;
+  top: 24%;
+}
+
+.sparkle-two {
+  right: 4%;
+  bottom: 18%;
+}
+
+.art-geometry {
+  opacity: .7;
+}
+
+
+/* =========================================================
+   5. MOBILE
+========================================================= */
 
 @media (max-width: 900px) {
+
   .hero-photo-frame {
     position: relative;
+
     right: auto;
     top: auto;
+
     transform: none;
+
     margin: 20px auto 50px;
   }
+
 }
 
+
 @media (max-width: 560px) {
+
   .hero-photo-frame {
     width: 250px;
     height: 250px;
   }
+
   .hero-mandala-ring {
-    inset: -20px;
+    inset: -18px;
   }
-  .sparkle-one { right: 18%; top: 22%; }
-  .sparkle-two { right: 8%; bottom: 12%; }
+
+  .hero-photo {
+    width: 82%;
+    height: 82%;
+  }
+
+  .sparkle-one {
+    right: 18%;
+    top: 22%;
+  }
+
+  .sparkle-two {
+    right: 8%;
+    bottom: 12%;
+  }
+
 }
