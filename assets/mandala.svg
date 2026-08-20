@@ -1,0 +1,45 @@
+<svg width="700" height="700" viewBox="0 0 700 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.9">
+    <circle cx="350" cy="350" r="286" stroke="#8B5CF6" stroke-width="1"/>
+    <circle cx="350" cy="350" r="248" stroke="#FF2F7D" stroke-width="1" stroke-dasharray="2 13"/>
+    <circle cx="350" cy="350" r="206" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="1 10"/>
+    <circle cx="350" cy="350" r="150" stroke="#FF2F7D" stroke-width="1"/>
+    <circle cx="350" cy="350" r="94" stroke="#8B5CF6" stroke-width="1"/>
+    <circle cx="350" cy="350" r="26" stroke="#FF2F7D" stroke-width="1"/>
+
+    <g stroke="#8B5CF6" stroke-width="1">
+      <path d="M350 64L386 128L422 64L458 128L494 76" opacity=".65"/>
+      <path d="M636 350L572 386L636 422L572 458L624 494" opacity=".65"/>
+      <path d="M350 636L314 572L278 636L242 572L206 624" opacity=".65"/>
+      <path d="M64 350L128 314L64 278L128 242L76 206" opacity=".65"/>
+      <polygon points="350,172 410,206 410,274 350,308 290,274 290,206"/>
+      <polygon points="350,392 410,426 410,494 350,528 290,494 290,426"/>
+      <polygon points="172,350 206,290 274,290 308,350 274,410 206,410"/>
+      <polygon points="392,350 426,290 494,290 528,350 494,410 426,410"/>
+    </g>
+
+    <g stroke="#FF2F7D" stroke-width="1.2">
+      <ellipse cx="350" cy="350" rx="48" ry="138" transform="rotate(0 350 350)"/>
+      <ellipse cx="350" cy="350" rx="48" ry="138" transform="rotate(45 350 350)"/>
+      <ellipse cx="350" cy="350" rx="48" ry="138" transform="rotate(90 350 350)"/>
+      <ellipse cx="350" cy="350" rx="48" ry="138" transform="rotate(135 350 350)"/>
+    </g>
+
+    <g fill="#FF2F7D">
+      <circle cx="350" cy="114" r="3"/>
+      <circle cx="517" cy="183" r="3"/>
+      <circle cx="586" cy="350" r="3"/>
+      <circle cx="517" cy="517" r="3"/>
+      <circle cx="350" cy="586" r="3"/>
+      <circle cx="183" cy="517" r="3"/>
+      <circle cx="114" cy="350" r="3"/>
+      <circle cx="183" cy="183" r="3"/>
+      <circle cx="350" cy="350" r="6"/>
+    </g>
+
+    <g stroke="#8B5CF6" stroke-width="1">
+      <path d="M350 34V52M350 648V666M34 350H52M648 350H666"/>
+      <path d="M127 127L140 140M560 560L573 573M573 127L560 140M140 560L127 573"/>
+    </g>
+  </g>
+</svg>

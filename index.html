@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pulkita Vijay — Mechanical & Automation Engineering student exploring robotics, automation, Industry 4.0 and the space between hardware and software." />
+  <meta name="theme-color" content="#080810" />
+  <title>yn. — Pulkita Vijay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:wght@500;600;700&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-noise"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Home">yn<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#about" data-section="about"><span>01</span> / about</a>
+      <a href="#projects" data-section="projects"><span>02</span> / projects</a>
+      <a href="#learning" data-section="learning"><span>03</span> / learning</a>
+      <a href="#contact" data-section="contact"><span>04</span> / contact</a>
+    </nav>
+    <button class="menu-button" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#about">01 / about</a>
+    <a href="#projects">02 / projects</a>
+    <a href="#learning">03 / learning</a>
+    <a href="#contact">04 / contact</a>
+  </div>
+
+  <main>
+    <section id="home" class="section hero">
+        <!-- PHOTO FRAME: place your own image at assets/profile-photo.jpg -->
+        <div class="hero-photo-frame" aria-label="Profile photo">
+          <div class="hero-mandala-ring" aria-hidden="true"></div>
+          <div class="hero-photo">
+            <img src="assets/profile-photo.jpg" alt="Profile portrait"
+                 onerror="this.style.display='none'">
+            <span class="hero-photo-placeholder">your photo</span>
+          </div>
+        </div>
+
+        <!-- Small creative accents: deliberately subtle -->
+        <span class="art-sparkle sparkle-one" aria-hidden="true">✦</span>
+        <span class="art-sparkle sparkle-two" aria-hidden="true">✧</span>
+        <span class="art-geometry geometry-one" aria-hidden="true"></span>
+
+      <div class="hero-copy">
+        <div class="eyebrow">MECHANICAL + AUTOMATION ENGINEERING <span>✦</span> IGDTUW</div>
+        <h1><span>Pulkita</span><em>Vijay.</em></h1>
+        <p class="hero-lede">I’m exploring mechanical systems, automation, robotics, and the point where physical engineering meets software.</p>
+        <p class="scribble">figuring it out, one system at a time <span>✦</span></p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">see my work <span>→</span></a>
+          <a class="button secondary" href="#contact">say hello</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <img class="mandala mandala-hero" src="assets/mandala.svg" alt="" />
+        <div class="hero-hud hud-a">τ = r × F</div>
+        <div class="hero-hud hud-b">Q̇ = mċΔT</div>
+        <div class="hero-hud hud-c">θ̇ = f(ω)</div>
+        <div class="hero-mark mark-a">+</div>
+        <div class="hero-mark mark-b">✦</div>
+        <div class="hero-mark mark-c">◌</div>
+      </div>
+
+      <div class="scroll-hint"><span></span> scroll</div>
+    </section>
+
+    <div class="separator"><span>+</span><span>+</span><span>+</span></div>
+
+    <section id="about" class="section about-section">
+      <div class="snapshot-row section-inner">
+        <div class="section-label">✦ field notes / snapshots</div>
+        <div class="snapshot-track">
+          <div class="snapshot tall"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Computer workstation"></div>
+          <div class="snapshot"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Engineering workspace"></div>
+          <div class="snapshot tall"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Circuit board close-up"></div>
+          <div class="snapshot"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=900&q=80" alt="Laptop on a desk"></div>
+          <div class="snapshot tall"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80" alt="Industrial engineering equipment"></div>
+        </div>
+      </div>
+
+      <div class="about-grid section-inner">
+        <div class="about-copy">
+          <div class="eyebrow">01 / ABOUT</div>
+          <h2>Who I am</h2>
+          <p>I’m a Mechanical &amp; Automation Engineering student interested in the overlap between machines, control, robotics, and intelligent systems.</p>
+          <p class="muted">I like learning by building: a CAD model, a PLC flow, a sensor dashboard, an ML experiment — anything that turns a concept into something I can actually see working.</p>
+          <div class="stats">
+            <div class="stat"><strong>8.95</strong><span>first-year CGPA</span></div>
+            <div class="stat"><strong>MAE</strong><span>engineering</span></div>
+            <div class="stat"><strong>01+</strong><span>year of building</span></div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <img class="mandala mandala-about" src="assets/mandala.svg" alt="" aria-hidden="true" />
+          <div class="note note-a">coffee before CAD,<br>always</div>
+          <div class="note note-b">machines first.<br>then the code.</div>
+          <div class="note note-c">genuinely curious<br>about how systems work</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="separator"><span>+</span><span>+</span><span>+</span></div>
+
+    
+        <div class="section-art section-art-projects" aria-hidden="true">
+          <span class="mini-mandala"></span>
+          <span class="mini-star">✦</span>
+        </div>
+<section id="projects" class="section projects-section">
+      <div class="section-inner">
+        <div class="eyebrow">02 / PROJECTS</div>
+        <div class="section-heading-row">
+          <h2>Things I’ve built</h2>
+          <p>Selected work across mechanical design, automation, IoT and AI-assisted systems.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured">
+            <div class="project-image"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1400&q=80" alt="Engineering workspace with machinery"></div>
+            <div class="project-body">
+              <div class="project-meta"><span>01</span><span>EDTECH × ENGINEERING</span></div>
+              <h3>Ascora — Hybrid AI Classroom</h3>
+              <div class="tags"><span>AI</span><span>Python</span><span>UI/UX</span><span>Hardware concept</span></div>
+              <p>A portable classroom concept designed around guided AI learning, an offline-first experience, and a simple physical kiosk for low-resource learning spaces.</p>
+              <div class="project-highlight">✦ prototype → interface → system concept</div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-image"><img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1400&q=80" alt="Industrial robotic arm and machinery"></div>
+            <div class="project-body">
+              <div class="project-meta"><span>02</span><span>IIOT × MONITORING</span></div>
+              <h3>Smart Conveyor Monitoring</h3>
+              <div class="tags"><span>Node-RED</span><span>IoT</span><span>ML</span><span>Data logging</span></div>
+              <p>A simulated industrial monitoring system for conveyor status, speed, load, temperature, product counts, fault logic and dataset generation.</p>
+              <div class="project-highlight">↳ real-time dashboard + maintenance-oriented data trail</div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image"><img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?auto=format&fit=crop&w=1400&q=80" alt="Electronics prototyping"></div>
+            <div class="project-body">
+              <div class="project-meta"><span>03</span><span>INDUSTRY 4.0</span></div>
+              <h3>IoT / Automation Lab Trail</h3>
+              <div class="tags"><span>Arduino</span><span>Tinkercad</span><span>Node-RED</span></div>
+              <p>A collection of hands-on experiments around sensors, smart systems, dashboards and simulated industrial controls.</p>
+              <div class="project-highlight">⌁ small experiments becoming a larger engineering vocabulary</div>
+            </div>
+          </article>
+
+          <article class="project-card wip">
+            <div class="wip-screen">
+              <img src="assets/mandala.svg" class="wip-mandala" alt="" aria-hidden="true" />
+              <span>NEXT BUILD</span>
+              <b>WORK IN PROGRESS</b>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>04</span><span>2026</span></div>
+              <h3>Something worth building next</h3>
+              <div class="tags"><span>Robotics</span><span>Automation</span><span>CAD</span></div>
+              <p>This slot stays open on purpose — a visual reminder that the portfolio is a living record, not a finished museum.</p>
+              <div class="progress"><span style="width:24%"></span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <img class="mandala corner-mandala projects-mandala" src="assets/mandala.svg" alt="" aria-hidden="true" />
+    </section>
+
+    <div class="separator"><span>+</span><span>+</span><span>+</span></div>
+
+    
+        <div class="section-art section-art-learning" aria-hidden="true">
+          <span class="mini-ring"></span>
+          <span class="mini-star">✧</span>
+        </div>
+<section id="learning" class="section learning-section">
+      <div class="section-inner learning-inner">
+        <div class="eyebrow">03 / LEARNING</div>
+        <h2>Teaching myself</h2>
+        <p class="scribble large">an honest record of what I’m learning — and what I’m still figuring out ✦</p>
+
+        <div class="learning-table">
+          <div class="table-head"><span>SUBJECT</span><span>RESOURCES</span><span>STATUS</span></div>
+          <div class="learning-row">
+            <div><strong>Python + ML</strong><small>scripting, data, automation — <em>building regularly</em></small></div>
+            <div class="resources"><span>IBM</span><span>Colab</span><span>projects</span></div>
+            <div class="progress-ring ring-pink"><span>72%</span></div>
+          </div>
+          <div class="learning-row">
+            <div><strong>CAD + Design</strong><small>modelling, fabrication, engineering drawings — <em>hands-on</em></small></div>
+            <div class="resources"><span>Fusion 360</span><span>Creo</span></div>
+            <div class="progress-ring ring-purple"><span>68%</span></div>
+          </div>
+          <div class="learning-row">
+            <div><strong>Automation + IoT</strong><small>PLC, Node-RED, sensors — <em>learning by simulation</em></small></div>
+            <div class="resources"><span>Tinkercad</span><span>Node-RED</span><span>Arduino</span></div>
+            <div class="progress-ring ring-pink soft"><span>64%</span></div>
+          </div>
+          <div class="learning-row">
+            <div><strong>Control Systems</strong><small>PID, modelling, response — <em>the intuition is coming</em></small></div>
+            <div class="resources"><span>lecture notes</span><span>Nise</span></div>
+            <div class="progress-ring ring-muted"><span>45%</span></div>
+          </div>
+        </div>
+
+        <div class="beyond">
+          <div class="eyebrow">THE REST OF ME</div>
+          <h3>beyond engineering <span>✦ a little room for everything else</span></h3>
+          <div class="interest-grid">
+            <div class="interest"><b>sketching &amp; painting</b><small>usually when I’m thinking</small></div>
+            <div class="interest"><b>music</b><small>playlists for every mood</small></div>
+            <div class="interest"><b>reading</b><small>especially sci-fi &amp; stories</small></div>
+            <div class="interest"><b>photography</b><small>collecting small details</small></div>
+            <div class="interest"><b>exploring</b><small>cafés, libraries, new places</small></div>
+          </div>
+        </div>
+      </div>
+      <img class="mandala learning-mandala" src="assets/mandala.svg" alt="" aria-hidden="true" />
+    </section>
+
+    <div class="separator"><span>+</span><span>+</span><span>+</span></div>
+
+    
+        <div class="section-art section-art-contact" aria-hidden="true">
+          <span class="mini-mandala"></span>
+        </div>
+<section id="contact" class="section contact-section">
+      <div class="section-inner contact-grid">
+        <div class="contact-copy">
+          <div class="eyebrow">04 / CONTACT</div>
+          <h2>Let’s build<br>something.</h2>
+          <p class="scribble large">internships, projects, collaborations, or just a conversation ✦</p>
+          <p>Open to engineering opportunities, research conversations, and genuinely interesting problems.</p>
+          <div class="contact-links">
+            <a href="mailto:yourname@email.com"><span>EMAIL</span>yourname@email.com</a>
+            <a href="#" target="_blank" rel="noreferrer"><span>LINKEDIN</span>linkedin.com/in/yourusername</a>
+            <a href="#" target="_blank" rel="noreferrer"><span>GITHUB</span>github.com/yourusername</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="field-row">
+            <label>NAME<input type="text" name="name" placeholder="your name" required></label>
+            <label>EMAIL<input type="email" name="email" placeholder="your@email.com" required></label>
+          </div>
+          <label>MESSAGE<textarea name="message" placeholder="tell me what you’re thinking..." required></textarea></label>
+          <button class="button primary" type="submit">send <span>→</span></button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+      <img class="mandala mandala-contact" src="assets/mandala.svg" alt="" aria-hidden="true" />
+    </section>
+  </main>
+
+  <footer class="footer section-inner">
+    <span>yn. / mechanical + automation engineering</span>
+    <span>built as a living portfolio ✦</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
