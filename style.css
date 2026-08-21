@@ -358,7 +358,7 @@ p {
 .hero-photo-frame {
   position: absolute;
   z-index: 10;
-  right: 19%;
+  right: 18%;
   top: 50%;
   width: clamp(270px, 30vw, 390px);
   height: clamp(270px, 30vw, 390px);
