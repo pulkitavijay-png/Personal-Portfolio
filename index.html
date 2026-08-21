@@ -108,34 +108,79 @@
          Includes profile photo + mandala
     ======================================================== -->
 
-    <section id="home" class="section hero">
+<section id="home" class="section hero">
+
+  <div class="hero-inner">
+
+    <!-- =========================
+         HERO TEXT
+    ========================== -->
+
+    <div class="hero-copy">
+
+      <div class="eyebrow">
+        MECHANICAL + AUTOMATION ENGINEERING
+        <span>✦</span>
+        IGDTUW
+      </div>
+
+      <h1>
+        <span>Pulkita</span>
+        <em>Vijay.</em>
+      </h1>
+
+      <p class="hero-lede">
+        I’m exploring mechanical systems, automation, robotics,
+        and the point where physical engineering meets software.
+      </p>
+
+      <p class="scribble">
+        figuring it out, one system at a time
+        <span>✦</span>
+      </p>
+
+      <div class="hero-actions">
+
+        <a class="button primary" href="#projects">
+          see my work <span>→</span>
+        </a>
+
+        <a class="button secondary" href="#contact">
+          say hello
+        </a>
+
+      </div>
+
+    </div>
 
 
-      <!-- -------------------------------------------------------
-           PROFILE PHOTO
+    <!-- =========================
+         HERO VISUAL
+         Mandala + photo
+    ========================== -->
 
-           Replace:
-           assets/profile-photo.jpg
+    <div class="hero-visual">
 
-           with your own photo later.
-      -------------------------------------------------------- -->
+      <div class="hero-mandala-wrap">
 
-      <div
-        class="hero-photo-frame"
-        aria-label="Profile photo"
-      >
-
-        <div
-          class="hero-mandala-ring"
+        <img
+          class="mandala mandala-hero"
+          src="assets/mandala.svg"
+          alt=""
           aria-hidden="true"
-        ></div>
+        />
 
         <div class="hero-photo">
 
+          <!--
+            Replace this image later with your own photo:
+            assets/profile-photo.jpg
+          -->
+
           <img
             src="assets/profile-photo.jpg"
-            alt="Profile portrait"
-            onerror="this.style.display='none'"
+            alt="Pulkita Vijay"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
           >
 
           <span class="hero-photo-placeholder">
@@ -147,123 +192,34 @@
       </div>
 
 
-      <!-- -------------------------------------------------------
-           SMALL CREATIVE ACCENTS
-           Deliberately subtle
-      -------------------------------------------------------- -->
+      <!-- Small engineering details -->
 
-      <span
-        class="art-sparkle sparkle-one"
-        aria-hidden="true"
-      >✦</span>
+      <span class="hero-hud hud-a">
+        τ = r × F
+      </span>
 
-      <span
-        class="art-sparkle sparkle-two"
-        aria-hidden="true"
-      >✧</span>
+      <span class="hero-hud hud-b">
+        Q̇ = mċΔT
+      </span>
 
-      <span
-        class="art-geometry geometry-one"
-        aria-hidden="true"
-      ></span>
+      <span class="hero-hud hud-c">
+        θ̇ = f(ω)
+      </span>
 
+      <span class="hero-mark mark-a">✦</span>
+      <span class="hero-mark mark-b">+</span>
 
-      <!-- -------------------------------------------------------
-           HERO TEXT
-      -------------------------------------------------------- -->
+    </div>
 
-      <div class="hero-copy">
-
-        <div class="eyebrow">
-          MECHANICAL + AUTOMATION ENGINEERING
-          <span>✦</span>
-          IGDTUW
-        </div>
-
-        <h1>
-          <span>Pulkita</span>
-          <em>Vijay.</em>
-        </h1>
-
-        <p class="hero-lede">
-          I’m exploring mechanical systems, automation, robotics,
-          and the point where physical engineering meets software.
-        </p>
-
-        <p class="scribble">
-          figuring it out, one system at a time
-          <span>✦</span>
-        </p>
-
-        <div class="hero-actions">
-
-          <a
-            class="button primary"
-            href="#projects"
-          >
-            see my work <span>→</span>
-          </a>
-
-          <a
-            class="button secondary"
-            href="#contact"
-          >
-            say hello
-          </a>
-
-        </div>
-
-      </div>
+  </div>
 
 
-      <!-- -------------------------------------------------------
-           HERO MANDA LA / ENGINEERING ART
-      -------------------------------------------------------- -->
+  <div class="scroll-hint">
+    <span></span>
+    scroll
+  </div>
 
-      <div
-        class="hero-art"
-        aria-hidden="true"
-      >
-
-        <img
-          class="mandala mandala-hero"
-          src="assets/mandala.svg"
-          alt=""
-        />
-
-        <div class="hero-hud hud-a">
-          τ = r × F
-        </div>
-
-        <div class="hero-hud hud-b">
-          Q̇ = mċΔT
-        </div>
-
-        <div class="hero-hud hud-c">
-          θ̇ = f(ω)
-        </div>
-
-        <div class="hero-mark mark-a">
-          +
-        </div>
-
-        <div class="hero-mark mark-b">
-          ✦
-        </div>
-
-        <div class="hero-mark mark-c">
-          ◌
-        </div>
-
-      </div>
-
-
-      <div class="scroll-hint">
-        <span></span>
-        scroll
-      </div>
-
-    </section>
+</section>
 
 
     <!-- =======================================================
