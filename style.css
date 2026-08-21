@@ -352,6 +352,7 @@ p {
   display: grid;
   place-items: center;
   isolation: isolate;
+  transform: translateX(-50px);
 }
 
 .hero-photo-frame {
