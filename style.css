@@ -356,16 +356,21 @@ p {
 
 .hero-photo-frame {
   position: absolute;
-  z-index: 4;
-  width: clamp(270px, 29vw, 390px);
-  aspect-ratio: 1;
+  z-index: 10;
+  right: 7%;
+  top: 50%;
+  width: clamp(270px, 30vw, 390px);
+  height: clamp(270px, 30vw, 390px);
+  transform: translateY(-50%);
   display: grid;
   place-items: center;
+  pointer-events: none;
+  isolation: isolate;
 }
 
 .hero-mandala-ring {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   inset: -28px;
   border-radius: 50%;
   opacity: .75;
@@ -408,7 +413,7 @@ p {
   place-items: center;
   padding: 7px;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   background: linear-gradient(135deg, rgba(255,45,117,.9), rgba(143,84,255,.72));
   box-shadow:
     0 0 0 1px rgba(255,255,255,.08),
