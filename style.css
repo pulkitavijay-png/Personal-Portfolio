@@ -445,7 +445,8 @@ p {
   width: min(620px, 72vw);
   max-width: none;
   opacity: .82;
-  z-index: 2;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-hud {
